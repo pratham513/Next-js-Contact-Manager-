@@ -1,21 +1,30 @@
 {
-    "contacts":[{
-        "id":"1",
-        "name":"John Doe",
-        "email":"john@gmail.com",
-        "userId":"1"
-    },{
-        "id":"2",
-        "name":"sam Doe",
-        "email":"sam@gmail.com",
-        "userId":"1"
+  "contacts": [
+    {
+      "id": "1",
+      "name": "Pratham Jain",
+      "email": "pratham@gmail.com",
+      "userId": "1"
+    },
+    {
+      "name": "shyam ",
+      "email": "s@gmail.com",
+      "userId": "1",
+      "id": "2"
+    },
+    {
+      "id": "d423",
+      "name": "Admin ",
+      "email": "Admin@gmail.com",
+      "userId": "1"
     }
-    ],
-    "users":[{
-        "id":"1",
-        "name":"user1",
-        "email":"user1@gmail.com",
-        "password":"123456"
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "user1",
+      "email": "user1@gmail.com",
+      "password": "123456"
     }
-    ]
+  ]
 }

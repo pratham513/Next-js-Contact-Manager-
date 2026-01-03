@@ -22,6 +22,3 @@ export const deleteContact=async (id:string) => {
     const response = await axios.delete(`${API_URL}/contacts/${id}`);
     return response.data;
 }
-
-
-

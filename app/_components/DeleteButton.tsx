@@ -1,14 +1,16 @@
 "use client";
-import React from "react";
+import React, { useActionState } from "react";
 import { ContactType } from "../_types/contact";
 import { FiTrash2 } from "react-icons/fi";
 
 type DeleteButtonProps = {
+  action:(prevState:any, formData:FormData)=> Promise<any>
   contact?: ContactType;
 };
-const DeleteButton = ({ contact }: DeleteButtonProps) => {
+const DeleteButton = ({ action, contact }: DeleteButtonProps) => {
+  const [state, formAction]= useActionState(action, null)
   return (
-    <form method="post">
+    <form action={formAction} >
       <input type="hidden" name="id" value={contact?.id} />
       <button
         type="submit"

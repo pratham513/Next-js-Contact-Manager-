@@ -1,6 +1,6 @@
 import React from "react"; // rafce
 import { getSession } from "../_lib/session";
-import { getContacts } from "./contact";
+import { getContacts } from "../api/contact";
 import ContactList from "../_components/ContactList";
 
 const ContactPage = async () => {
